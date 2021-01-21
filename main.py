@@ -16,6 +16,7 @@ def hello():
         }
     response = requests.request("GET", url, headers=headers)
     data = response.json()
+    print(data)
     mArrey = data['memberList']
     now = datetime.datetime.now()
     now2 = maya.parse(now).datetime()
