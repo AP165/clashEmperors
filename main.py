@@ -44,4 +44,5 @@ def invalid_route(e):
 def internal_error(error):
     return render_template('500.html')
 
+
 app.run(debug=False,host="0.0.0.0")
